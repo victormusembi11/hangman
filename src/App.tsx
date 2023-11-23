@@ -1,3 +1,5 @@
+import { HangmanDrawing } from "./components/HangmanDrawing";
+
 function App() {
   return (
     <div
@@ -18,6 +20,7 @@ function App() {
       >
         Lose Win
       </div>
+      <HangmanDrawing />
     </div>
   );
 }

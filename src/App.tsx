@@ -37,7 +37,7 @@ function App() {
         Lose Win
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
-      <HangmanWord />
+      <HangmanWord wordToGuess={wordToGuess} guessedLetters={guessedLetters} />
       <div style={{ alignSelf: "stretch" }}>
         <Keyboard />
       </div>

@@ -1,5 +1,6 @@
 import { HangmanDrawing } from "./components/HangmanDrawing";
 import { HangmanWord } from "./components/HangmanWord";
+import { Keyboard } from "./components/Keyboard";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
       </div>
       <HangmanDrawing />
       <HangmanWord />
+      <div style={{ alignSelf: "stretch" }}>
+        <Keyboard />
+      </div>
     </div>
   );
 }

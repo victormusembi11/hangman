@@ -1,3 +1,5 @@
+import styles from "./../assets/Keyboard.module.css";
+
 const KEYS = [
   "a",
   "b",
@@ -37,7 +39,11 @@ export function Keyboard() {
       }}
     >
       {KEYS.map((key) => {
-        return <button key={key}>{key}</button>;
+        return (
+          <button className={`${styles.btn}`} key={key}>
+            {key}
+          </button>
+        );
       })}
     </div>
   );
